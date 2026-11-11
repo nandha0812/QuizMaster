@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>🎯 QuizMaster</h2>
+        <p>Test Your Knowledge. Challenge Yourself.</p>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h1>Welcome to QuizMaster!</h1>
+            <p>Choose a category and test your skills.</p>
+
+            <select id="category">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="HTML">HTML</option>
+                <option value="GK">General Knowledge</option>
+            </select>
+
+            <button onclick="startQuiz()">Start Quiz</button>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <p id="timer">Time: 60 seconds</p>
+            <div id="options"></div>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        </section>
+
+        <section id="result" class="hidden">
+            <h1>Quiz Completed!</h1>
+            <h2 id="score"></h2>
+            <p id="message"></p>
+            <button onclick="restartQuiz()">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 QuizMaster | Student Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
